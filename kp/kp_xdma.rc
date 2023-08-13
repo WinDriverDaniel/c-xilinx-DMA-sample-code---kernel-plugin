@@ -1,0 +1,26 @@
+#include <windows.h>
+#include <ntverp.h>
+#include "wd_ver.h"
+
+#undef  VERSION
+#define VERSION WD_VERSION_STR
+#define VER_FILETYPE    VFT_DRV
+#define VER_FILESUBTYPE VFT2_DRV_SYSTEM
+#undef  VER_COMPANYNAME_STR
+#define VER_COMPANYNAME_STR         "Jungo Connectivity"
+#define VER_FILEDESCRIPTION_STR     "KP_XDMA Driver"
+#define VER_INTERNALNAME_STR        "KP_XDMA.sys\0"
+#define VER_ORIGINALFILENAME_STR    "KP_XDMA.sys"
+#define VER_LEGALCOPYRIGHT_YEARS    COPYRIGHTS_YEAR_STR
+#define VER_LEGALCOPYRIGHT_STR      COPYRIGHTS_FULL_STR
+#undef  VER_PRODUCTNAME_STR
+#define VER_PRODUCTNAME_STR "My UD Driver"
+#undef  VER_PRODUCTVERSION
+#define VER_PRODUCTVERSION  WD_MAJOR_VER,WD_MINOR_VER,WD_SUB_MINOR_VER
+#undef  VER_PRODUCTVERSION_STR
+#define VER_PRODUCTVERSION_STR VERSION "\0"
+#undef  VER_LEGALTRADEMARKS_STR
+//TODO:  Define any trademarks for this driver here
+#define VER_LEGALTRADEMARKS_STR  "Trademark is a legal trademark of Jungo Connectivity"
+#include "common.ver"
+
